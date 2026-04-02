@@ -1,0 +1,68 @@
+/* 🌙 QR PAGE STYLING */
+.qr-container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* 🖼️ IMAGE ANIMATION */
+.qr-image {
+  width: 260px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px pink;
+  margin-bottom: 20px;
+  animation: zoomIn 4s ease-in-out infinite alternate;
+}
+
+/* Zoom effect */
+@keyframes zoomIn {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.08); }
+}
+
+/* ✨ Glow */
+.glow {
+  text-shadow: 0 0 10px #ff4d6d, 0 0 20px #ff4d6d;
+}
+
+/* 🎬 Fade-in title */
+.fade {
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* 💌 Text */
+#qrText {
+  white-space: pre-line;
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+/* 💖 Floating Hearts */
+.hearts::before {
+  content: "💖 💕 💗 💓 💞";
+  position: fixed;
+  width: 100%;
+  animation: float 10s linear infinite;
+  font-size: 24px;
+}
+
+@keyframes float {
+  0% { transform: translateY(100vh); }
+  100% { transform: translateY(-10vh); }
+}
+
+/* 📱 MOBILE PERFECT */
+@media (max-width: 768px) {
+  .qr-image {
+    width: 200px;
+  }
+
+  #qrText {
+    font-size: 16px;
+  }
+}
