@@ -1,9 +1,8 @@
 /* 🌙 QR PAGE STYLING */
 .qr-container {
   text-align: center;
-  padding: 40px 20px;
-  max-width: 500px;
-  margin: auto;
+  padding: 20px;
+  width: 100%;
 }
 
 /* 🖼️ IMAGE ANIMATION */
@@ -58,46 +57,43 @@
   100% { transform: translateY(-10vh); }
 }
 
-/* 📱 MOBILE PERFECT */
+/* 📱 FULL SCREEN MOBILE (CLEAN FIX) */
 @media (max-width: 768px) {
-  .qr-image {
-    width: 200px;
-  }
 
-  #qrText {
-    font-size: 16px;
+  body {
+    margin: 0;
+    padding: 0;
   }
-}
-/* 📱 MOBILE OPTIMIZED QR PAGE */
-@media (max-width: 768px) {
 
   .qr-container {
-    padding: 20px;
+    width: 100%;
+    padding: 15px;
   }
 
-  /* 🖼️ Bigger image */
+  /* 🖼️ FULL WIDTH IMAGE */
   .qr-image {
-    width: 80%;
-    max-width: 300px;
+    width: 95%;
+    height: auto;
+    max-width: none;
+    border-radius: 20px;
   }
 
-  /* 💌 Text container improvement */
-  #qrText {
-    font-size: 18px;
-    line-height: 1.8;
-    max-width: 90%;
-    margin: auto;
-    text-align: center;
-  }
-
-  /* ❤️ Heading */
+  /* ❤️ TITLE */
   h1 {
-    font-size: 26px;
+    font-size: 28px;
+    margin-top: 15px;
   }
 
-  /* 💖 Sub text */
+  /* 💌 MESSAGE TEXT */
+  #qrText {
+    font-size: 19px;
+    line-height: 1.8;
+    padding: 0 10px;
+  }
+
+  /* 💖 OTHER TEXT */
   p {
-    font-size: 16px;
+    font-size: 17px;
   }
 
 }
