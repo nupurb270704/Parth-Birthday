@@ -5,9 +5,9 @@
   width: 100%;
 }
 
-/* 🖼️ IMAGE ANIMATION */
 .qr-image {
-  width: 260px;
+  width: 60%;
+  max-width: 300px;
   border-radius: 20px;
   box-shadow: 0 0 30px pink;
   margin-bottom: 20px;
